@@ -2,15 +2,10 @@
 
 //1. Crea una función llamada sum y que devuelva el valor de la suma de dos números introducidos como parámetros.
 
-let sum = function(a, b){
-  return a + b;
-}
 
 //2. Crea una función que se llame power. Esta función debe recibir dos números como parámetros y tiene que devolver el primer número elevado al segundo número.
 
-let power = function(a,b){
-  return a ** b;
-}
+
 
 //3. Crea una función que se llame compare. Esta función debe recibir dos números como parámetros y debe devolver el número que sea mayor. Si los dos números son iguales, puedes devolver cualquiera de los dos. Si alguno de los dos parámetros es un string, la función debe devolver "Por favor, introduce un número".
 
@@ -20,17 +15,7 @@ let power = function(a,b){
 //compare(5, 5) --> 5
 //compare('hola', 4) --> "Por favor, introduce un número"
 
-let compare = function(a,b){
-  if(typeof a !== 'number' || typeof b !== 'number'){
-    return "Por favor, introduce un número";
-  } else {
-    if(a >= b){
-      return a;
-    } else if(a < b){
-      return b;
-    } 
-  }
-}
+
 
 //4. Crea una función que se llame calculator. Esta variable va a recibir tres parámetros. El primero y el tercero, serán números. El segundo va a ser un símbolo matemático. Puede ser: +, -, * o /. La función debe devolver el resultado de la operación entre los dos números introducidos teniendo en cuenta el tipo de operación que hemos indicado en el segundo parámetro. RECUERDA: Para introducir el símbolo matemático, tienes que meterlo como un string. Si no lo haces de esta forma, te va a dar error. 
 
@@ -40,17 +25,7 @@ let compare = function(a,b){
 // calculator(20, '*', 0) --> 0
 // calculator(100, '-', 150) --> -50
 
-calculator = function(a,b,c){
-  if(b === "-"){
-    return a - c;
-  } else if(b === '+'){
-    return a + c;
-  } else if(b === "/"){
-    return a / c;
-  } else if(b === "*"){
-    return a * c;
-  }
-}
+
 
 
 
